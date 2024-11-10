@@ -1,0 +1,231 @@
+/* shared-styles.css */
+.main-layout {
+    display: flex;
+    height: 100vh;
+    background-color: var(--lumo-base-color);
+}
+
+.sidebar {
+    width: 256px;
+    min-height: 100vh;
+    background-color: var(--lumo-contrast-10pct);
+}
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    border-bottom: 1px solid var(--lumo-contrast-20pct);
+}
+
+.sidebar-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.sidebar-nav {
+    margin-top: 24px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 8px 24px;
+    color: var(--lumo-secondary-text-color);
+    text-decoration: none;
+}
+
+.nav-link.active {
+    background-color: var(--lumo-primary-color-10pct);
+    color: var(--lumo-primary-text-color);
+}
+
+.nav-link:hover {
+    background-color: var(--lumo-primary-color-10pct);
+}
+
+.nav-link vaadin-icon {
+    margin-right: 12px;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    background-color: var(--lumo-base-color);
+    border-bottom: 1px solid var(--lumo-contrast-10pct);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.menu-button {
+    color: var(--lumo-primary-text-color);
+}
+
+.search-field {
+    margin-left: 16px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.icon-button {
+    color: var(--lumo-primary-text-color);
+}
+
+.user-menu {
+    margin-left: 16px;
+}
+
+.dashboard-main {
+    flex-grow: 1;
+    overflow: auto;
+    background-color: var(--lumo-base-color);
+    padding: 32px 24px;
+}
+
+.dashboard-title {
+    color: var(--lumo-primary-text-color);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.metric-card {
+    background-color: var(--lumo-base-color);
+    border-radius: var(--lumo-border-radius);
+    box-shadow: var(--lumo-box-shadow-xs);
+    padding: 16px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.card-title {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card-icon {
+    color: var(--lumo-secondary-text-color);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-value {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card-increase {
+    font-size: 12px;
+    color: var(--lumo-secondary-text-color);
+    display: flex;
+    align-items: center;
+}
+
+.increase-icon {
+    color: var(--lumo-success-color);
+    margin-right: 4px;
+}
+
+.decrease-icon {
+    color: var(--lumo-error-color);
+    margin-right: 4px;
+}
+
+.charts-section {
+    margin-top: 32px;
+    display: grid;
+    gap: 32px;
+}
+
+.chart-card {
+    background-color: var(--lumo-base-color);
+    border-radius: var(--lumo-border-radius);
+    box-shadow: var(--lumo-box-shadow-xs);
+    padding: 16px;
+}
+
+.chart-title {
+    margin-bottom: 16px;
+}
+
+.top-users-card, .monthly-report-card {
+    background-color: var(--lumo-base-color);
+    border-radius: var(--lumo-border-radius);
+    box-shadow: var(--lumo-box-shadow-xs);
+    padding: 16px;
+}
+
+.top-users-content, .monthly-report-content {
+    margin-top: 16px;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.user-diagrams {
+    font-size: 12px;
+    color: var(--lumo-secondary-text-color);
+}
+
+.user-last-active {
+    margin-left: auto;
+    font-size: 12px;
+    color: var(--lumo-secondary-text-color);
+}
+
+.report-section {
+    margin-top: 24px;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.findings-list, .recommendations-list {
+    margin-top: 8px;
+    padding-left: 16px;
+}
